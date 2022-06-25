@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-25T01:30:50 ART" name="Default suite" finished-at="2022-06-25T01:30:51 ART" duration-ms="1584">
+    <groups>
+    </groups>
+    <test started-at="2022-06-25T01:30:50 ART" name="Default test" finished-at="2022-06-25T01:30:51 ART" duration-ms="1584">
+      <class name="Pruebas.SauceDemoTest">
+        <test-method is-config="true" signature="abrirPagina()[pri:0, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:46 ART" name="abrirPagina" finished-at="2022-06-25T01:30:50 ART" duration-ms="3746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirPagina -->
+        <test-method signature="ingresar()[pri:1, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:50 ART" name="ingresar" finished-at="2022-06-25T01:30:50 ART" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="generarOrden()[pri:2, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:51 ART" name="generarOrden" finished-at="2022-06-25T01:30:51 ART" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generarOrden -->
+        <test-method signature="irAPagar()[pri:3, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:51 ART" name="irAPagar" finished-at="2022-06-25T01:30:51 ART" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- irAPagar -->
+        <test-method signature="DatosPago()[pri:4, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:51 ART" name="DatosPago" finished-at="2022-06-25T01:30:51 ART" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatosPago -->
+        <test-method is-config="true" signature="cerrarPagina()[pri:0, instance:Pruebas.SauceDemoTest@1a482e36]" started-at="2022-06-25T01:30:52 ART" name="cerrarPagina" finished-at="2022-06-25T01:30:52 ART" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cerrarPagina -->
+      </class> <!-- Pruebas.SauceDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
