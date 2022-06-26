@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pruebas.SauceDemoTest">
+      <class name="Edit.SauceDemo.Asignacion7">
         <methods>
+          <include name="cerrar"/>
+          <include name="generarOrden" invocation-numbers="2 4"/>
           <include name="abrirPagina"/>
-          <include name="irAPagar"/>
         </methods>
-      </class> <!-- Pruebas.SauceDemoTest -->
+      </class> <!-- Edit.SauceDemo.Asignacion7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

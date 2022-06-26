@@ -20,6 +20,11 @@ public class DInformation {
 	@FindBy(id="continue")
 	WebElement continuar;
 	
+	@FindBy(id="finish")
+	WebElement finish;
+	
+	
+	
 	//Constructor
 	public DInformation(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -43,5 +48,8 @@ public class DInformation {
 		continuar.click();
 	}
 	
+	public void finalizar() {
+		finish.click();
+	}
 
 }

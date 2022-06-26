@@ -17,7 +17,7 @@ public class BYourCart {
 	
 	
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/a[1]")
-	WebElement cart; //carrito
+	WebElement cart; //Elemento carrito
 	
 	
 	//Constructor

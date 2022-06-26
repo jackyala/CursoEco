@@ -10,6 +10,8 @@ public class CCheckout {
 	@FindBy(name="checkout")
 	WebElement checkout;
 	
+	
+	
 	//Constructor
 	public CCheckout(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -19,5 +21,7 @@ public class CCheckout {
 	public void pagar() {
 		checkout.click();
 	}
-
+	
+	
+	
 }
