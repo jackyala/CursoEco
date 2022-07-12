@@ -37,19 +37,15 @@ public class SauceDemoTest {
 	
 		
 	//1- Ingresar Usuario (pagina AHome)
-	@Test(priority=1, dataProvider="DatosEntrada")
-	public void ingresar(String usuario, String pasword) {
+	@Test(priority=1)
+	public void ingresar() {
 		AHome inicio = new AHome(driver);
 		
-		inicio.escribirUsuario(usuario);
-		inicio.escribirClave(pasword);
+		inicio.escribirUsuario("standard_user");
+		inicio.escribirClave("secret_sauce");
 		inicio.login();
 	}
 	
-	@DataProvider(name="DatosEntrada")
-	public Object[][] obtenerDatosExcel ()throws Exception{
-		return DatosExcel.leerExcel("..\\SauceDemo\\Datos\\DatosEntrada.xlsx", "Hoja1");
-	}
 	
 	
 	//2- Ingresar Productos en el carrito (pagina BYourCart)
@@ -72,22 +68,18 @@ public class SauceDemoTest {
 	}
 	
 	//4- Ingresar datos para el pago (pagina DInformacion)
-	@Test(priority=4, dataProvider="DatosEntrada1")
-	public void DatosPago(String nombre, String apellido, String codPostal ) {
+	@Test(priority=4)
+	public void DatosPago( ) {
 		DInformation datos = new DInformation(driver);
 		
-		datos.campoNombre(nombre);
-		datos.campoApellido(apellido);
-		datos.campoCodPost(codPostal);
+		datos.campoNombre("marta");
+		datos.campoApellido("martinez");
+		datos.campoCodPost("12000");
 		datos.sigPagina();
 		datos.finalizar();
 	}
 	
-	@DataProvider(name="DatosEntrada1")
-	public Object[][] obtenerDatosExcel1 ()throws Exception{
-		return DatosExcel.leerExcel("..\\SauceDemo\\Datos\\DatosEntrada.xlsx", "Hoja1");
-	}
-	
+		
 	
 	//5- Desloguearse (pagina EDesloguearse)
 	@Test(priority=5)

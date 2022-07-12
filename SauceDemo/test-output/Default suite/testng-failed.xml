@@ -5,8 +5,11 @@
     <classes>
       <class name="Pruebas.SauceDemoTest">
         <methods>
+          <include name="DatosPago"/>
+          <include name="generarOrden"/>
           <include name="abrirPagina"/>
-          <include name="ingresar"/>
+          <include name="salirDePagina"/>
+          <include name="irAPagar"/>
         </methods>
       </class> <!-- Pruebas.SauceDemoTest -->
     </classes>
